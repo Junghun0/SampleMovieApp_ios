@@ -115,6 +115,10 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="2g2-NF-haL">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -127,6 +131,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="영화정보" id="uZE-h3-MhD"/>
                     <connections>
+                        <outlet property="spinner" destination="2g2-NF-haL" id="BJG-xe-c4U"/>
                         <outlet property="wv" destination="RAF-Cc-RTb" id="rI9-yI-qrK"/>
                     </connections>
                 </viewController>
